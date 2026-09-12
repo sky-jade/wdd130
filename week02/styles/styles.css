@@ -7,20 +7,37 @@ p {
 }
 
 main img {
-    box-shadow: 0 0 30px grey;
+    width: 150px;
+    height: auto;
+    border: 1px solid #999;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+nav {
+    background-color: #4682b4;
+    padding: 1em;
+}
+
+nav a {
+    color: white;
+    padding: 1em;
+    display: block;
+}
+
+h1 {
+    color: #4682b4;
 }
 
 aside {
     width: 20em;
     margin: 1em;
-    border: 1px solid rgb(0 0 0/ 0.2);
+    border: 1px solid rgb(0 0 0 / 20%);
     padding: 0;
     background-color: #eee;
     color: #333;
     text-align: center;
-    margin: 20px 0;
-    box-shadow: 0 0 30px grey;
-
+    box-shadow: 0 0 30px gray;
 }
 
 aside img {
@@ -28,29 +45,8 @@ aside img {
     height: auto;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-}
-
-nav {
-    background-color: #eee;
-    padding: 1em;
-}
-
-nav a {
-    color: #333;
-    padding: 1em;
-    display: block;
-}
-
-h1 {
-    color: #333;
-}
-
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-
 }
