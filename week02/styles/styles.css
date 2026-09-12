@@ -33,6 +33,21 @@ main img {
     height: auto;
 }
 
+nav {
+    background-color: #eee;
+    padding: 1em;
+}
+
+nav a {
+    color: #333;
+    padding: 1em;
+    display: block;
+}
+
+h1 {
+    color: #333;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
