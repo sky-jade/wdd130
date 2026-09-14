@@ -1,9 +1,7 @@
-main {
-    max-width: 840px;
-}
-
-p {
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 main img {
@@ -12,21 +10,33 @@ main img {
     border: 1px solid #999;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+p {
+    margin: 1rem;
 }
 
 nav {
     background-color: #4682b4;
-    padding: 1em;
+    padding: 10px;
 }
 
 nav a {
     color: white;
-    padding: 1em;
+    padding: 10px;
     display: block;
 }
 
 h1 {
     color: #4682b4;
+    font-family: sans-serif;
+    padding: .5rem;
+}
+
+main {
+    max-width: 640px;
 }
 
 aside {
@@ -38,6 +48,7 @@ aside {
     color: #333;
     text-align: center;
     box-shadow: 0 0 30px gray;
+    position: relative;
 }
 
 aside img {
@@ -46,7 +57,21 @@ aside img {
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* class selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
