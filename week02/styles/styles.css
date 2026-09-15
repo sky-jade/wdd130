@@ -16,6 +16,7 @@ main img {
 
 p {
     margin: 1rem;
+    padding: 0;
 }
 
 nav {
@@ -56,12 +57,6 @@ aside img {
     height: auto;
 }
 
-footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-
 /* class selectors */
 
 .box {
@@ -74,4 +69,10 @@ footer {
 
 .indent {
     padding-left: 2rem;
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
 }
