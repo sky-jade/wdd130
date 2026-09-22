@@ -1,5 +1,6 @@
+/* Color scheme matching the original example */
 :root {
-    --primary-color: brown;
+    --primary-color: #055a05;
     /* forest green */
     --secondary-color: #f4a261;
     /* warm sand */
@@ -11,15 +12,11 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
 }
 
 body {
@@ -27,6 +24,7 @@ body {
     color: var(--accent1-color);
 }
 
+/* Center everything at 840px like the assignment */
 header,
 main,
 footer {
@@ -34,24 +32,42 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+/* ========== HEADER ========== */
+header {
+    padding: 15px 20px 10px;
+    background-color: #fff;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+header img {
+    display: block;
+    height: 80px;
+    width: auto;
+    margin-bottom: 10px;
 }
 
-.socialmedia a {
+/* Vertical listed navigation (exactly like the original) */
+header nav ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+header nav li {
+    margin: 4px 0;
+}
+
+header nav a {
     text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
 }
 
+header nav a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* ========== HERO ========== */
 .hero {
     position: relative;
 }
@@ -60,6 +76,123 @@ article {
     display: block;
     width: 100%;
     height: auto;
+}
+
+/* Dark blue banner across the top of the hero image */
+.hero h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 12px 16px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+    opacity: 0.80;
+}
+
+/* Dark blue overlay box at the bottom of the hero */
+.hero article {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 14px 18px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    opacity: 0.92;
+    overflow: auto;
+    /* clear the float */
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+    color: var(--accent2-color);
+    font-size: 0.95rem;
+    line-height: 1.45;
+
+}
+
+/* Small image floated to the right inside the overlay */
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+/* ========== SECTIONS ========== */
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark blue full-width banners for History & Adventure */
+section h2 {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 1.35rem;
+    text-align: center;
+    padding: 11px 16px;
+    margin: 0;
+}
+
+section p {
+    margin: 18px 22px 28px;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    padding: 18px 22px 22px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+footer p {
+    margin: 0 0 12px 0;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Social icons */
+.socialmedia {
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+}
+
+/* Required spacing rule from the assignment */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Override so the hero overlays sit correctly */
+.hero,
+.hero h1,
+.hero article {
+    margin: 0;
 }
 
 h1 {
@@ -71,10 +204,74 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text – enough contrast with the background-color */
+    /* white text – make sure there is enough contrast with the background-color */
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.hero {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    /* white text – make sure there is enough contrast with the background-color */
+}
+
+/* ========== SECTIONS ========== */
+section {
+    margin: 0;
+    /* remove the 16px margin so the banner reaches the edges */
+    padding: 0;
+}
+
+/* Dark blue full-width banners for History & Adventure */
+section h2 {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 1.35rem;
+    text-align: center;
+    padding: 11px 16px;
+    margin: 0;
+    /* ensure no extra margin on the heading itself */
+}
+
+.hero div {
+    opacity: 100;
+}
+
+/* Hero heading – slightly dropped + low opacity like the example */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    /* drops it down a little from the top edge */
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 14px 16px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+    opacity: 0.7;
+    /* low opacity so the image shows through */
+}
+
+section {
+    margin: 25px 0 0 0;
+    /* top gap only */
+    padding: 0;
 }
