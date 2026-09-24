@@ -546,3 +546,36 @@ header img,
     height: 80px;
     width: auto;
 }
+
+/* ========== HEADER – CSS Grid (logo + nav side by side) ========== */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: #fff;
+    /* ← change to white */
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    /* green text instead of white */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: rgba(5, 90, 5, 0.1);
+    /* light green hover */
+    color: var(--primary-color);
+}
+
+.logo-link {
+    justify-self: center;
+    align-self: center;
+    /* no background-color or padding needed now */
+}
