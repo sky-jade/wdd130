@@ -5,65 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Rapids! Whitewater rafting company unforgettable river adventures for over 30 years. Family owned and operated with experienced guides.">
-    <meta name="author" content="Susan Student">
-    <title>About Us | Rapids! Whitewater Rafting</title>
+      content="Rapids! Whitewater rafting company unforgettable river adventures for families and thrill-seekers.">
+    <meta name="author" content="Glory Ene Offiong">
+    <title>About Us | Definitely Rafting!</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
+    <!-- HEADER: logo + nav side by side (CSS Grid) -->
     <header>
-        <img src="images/raftingcompas.jpg" alt="Rapids! Whitewater Rafting Logo">
+        <a href="index.html" class="logo-link">
+            <img src="images/raftingcompas.jpg" alt="Definitely Rafting! Logo" class="logo">
+        </a>
         <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="trips.html">Trip</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <!-- Hero section with overlays -->
+        <!-- HERO section -->
         <div class="hero">
-            <img src="images/rafting.jpg" alt="Group of people whitewater rafting on a red raft">
+            <img src="images/rafting.jpg" alt="Group of people whitewater rafting on the river">
             <h1>Definitely Rafting! Make Memories!</h1>
             <article>
                 <img src="images/funrafting.avif" alt="Happy rafters on the river">
                 <p>
                     Our goal is to provide you with the best experience possible. We have been
-                    providing unforgettable experiences
-                    for over 30 years. We are a family owned and operated business that is dedicated
-                    to providing you with the best
-                    experience possible. We have a team of experienced guides that are dedicated to
-                    providing you with
+                    providing unforgettable experiences for over 30 years. We are a family owned
+                    and operated business that is dedicated to providing you with the best
+                    experience possible. We have a team of experienced guides that are dedicated
+                    to providing you with the best experience possible.
                 </p>
             </article>
         </div>
 
-        <!-- History section -->
-        <section>
+        <!-- HISTORY section (text | image | text) -->
+        <section class="history">
             <h2>History</h2>
-            <p>
-                Definitely Rafting! started floating the river in 1995. We have been providing
-                unforgettable
-                experiences for over 30 years.
-                We are a family owned and operated business that is dedicated to providing you with
-                the best experience possible.
-                We have a team of experienced guides that are dedicated to providing you with the
-                best experience possible.
-            </p>
+            <div class="history-content">
+                <p>
+                    Definitely Rafting! started floating the river over 30 years ago. We are a
+                    family owned and operated business that is dedicated to providing the best
+                    experience possible.
+                </p>
+                <img src="images/historic.jpg" alt="Historic photo of early rafting trips">
+                <p>
+                    We have a team of experienced guides that are dedicated to providing the
+                    best experience possible. Join us for an unforgettable adventure on the river.
+                </p>
+            </div>
         </section>
 
-        <!-- Adventure section (empty for now as required) -->
-        <section>
-            <h2>Adventure Awaits You</h2>
+        <!-- ADVENTURES section – 5 figures in a row -->
+        <section class="adventures">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventure-grid">
+                <figure>
+                    <img src="images/rafting1.jpg" alt="Los Dientes del Diablo rapid">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting2.jpg" alt="Big Mallard rapid">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting4.jpg" alt="Canyon Run">
+                    <figcaption>Canyon Run</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting5.jpg" alt="Sunset Float">
+                    <figcaption>Sunset Float</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
+    <!-- FOOTER: text left, social icons right -->
     <footer>
-        <p>© 2026 | Definitely Rafting! | Glory Ene Offiong</p>
+        <p>&copy; 2026 | Definitely Rafting! | Glory Ene Offiong</p>
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank" rel="noopener">
                 <img src="images/facebookk.png" alt="Facebook Icon">
